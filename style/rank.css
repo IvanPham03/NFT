@@ -1,0 +1,66 @@
+.ranks{
+    margin-top: 50px;
+    text-align: center;
+    scroll-margin-top: 50px;
+}
+
+.ranks h3 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--white);
+    padding: 50px 0;
+}
+.ranks span button{
+    margin: 10px;
+    letter-spacing: 1px;
+}
+.ranks .tb .row {
+    width: 100%;
+    padding: 30px 10px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background: url(/dist/img/bk3.png) no-repeat center center/ 200%;
+    align-items: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    text-align: start;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.ranks .tb .row:hover {
+    border: 1px solid var(--red);
+    background: url(../dist/img/bk.png) no-repeat center center/200%;
+}
+.ranks .tb .row .year{
+    margin-left: 20px;
+}
+.ranks .tb .row .name {
+    width: 180px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.ranks .tb .row .icon{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+}
+.ranks .tb .row .task{
+    width: 160px !important;
+}
+.ranks .tb .row .icon img{
+    margin-right: 8px;
+}
+.ranks .tb .row .icon-arrow{
+    margin-right: 20px;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+
+.ranks .tb .row:hover .icon-arrow{
+    animation: zoom 1s infinite linear;
+}

@@ -1,0 +1,81 @@
+.footer {
+  padding-bottom: 20px;
+  background: url(../dist/img/bk4.png) no-repeat center center/ 200% !important;
+}
+.footer .head_foot {
+  height: 250px !important;
+  background: none !important;
+}
+
+.footer .navs .logo {
+  margin-left: 40px;
+}
+
+.footer .navs .nav {
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.footer .navs .nav a {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer .navs .search {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .navs .search button {
+  outline: none;
+  padding: 10px 20px;
+  background-color: var(--red);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.footer .navs .search input {
+  width: 100%;
+  background: transparent;
+  /* border-right: none; */
+  caret-color: var(--white);
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+/* hover */
+.footer .navs .nav:hover {
+  border: 1px solid var(--red);
+  opacity: 0.8;
+}
+.footer .navs .nav:hover a {
+  color: var(--red);
+}
+
+/* copywrite */
+
+.copywrite {
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+}
+.copywrite a {
+  text-decoration: none;
+  color: var(--white);
+}
+.copywrite a:hover {
+    color: var(--gray_text);
+}
+
+.copywrite .line {
+    display: inline-block;
+    margin: 0 6px;
+    width: 2px;
+    height: 12px;
+    background-color: var(--white);
+}

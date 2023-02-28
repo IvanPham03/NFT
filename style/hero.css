@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "GreatVibes-Regular";
+  src: url("../dist/font/Pinyon_Script/PinyonScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Tilt_Warp";
+  src: url("../dist/font/Tilt_Warp/TiltWarp-Regular-VariableFont_XROT\,YROT.ttf");
+}
+
+.hero {
+  margin: 50px 0;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  scroll-margin-top: 50px;
+}
+.hero .text {
+  width: 40%;
+  z-index: 2;
+  height: 100%;
+}
+.hero .text .text-01 p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 0;
+}
+.large {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "Tilt_Warp", sans-serif;
+  letter-spacing: 2px;
+}
+
+/*  */
+.hero .text .text-02 {
+  margin-left: 50px;
+}
+.hero .text .text-02 p:nth-child(1) {
+  font-size: 44px;
+  font-weight: 700;
+}
+.hero .text .text-02 p:nth-child(2) {
+  font-family: "GreatVibes-Regular", sans-serif;
+  letter-spacing: 4px;
+  font-size: 64px;
+}
+.hero .text .text-02 p:nth-child(3) {
+  color: var(--gray_text);
+  line-height: 1.5em;
+  margin: 40px 0;
+}
+/* button */
+.hero .text .text-02 button{
+    margin-right: 20px;
+}
+
+.hero .text-02 .btns .btn-sign-up {
+  background-color: var(--red);
+  font-size: 14px;
+}
+.hero .text-02 .btns .btn-log-in {
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+/* img */
+.hero .img {
+  width: 60%;
+  height: 100%;
+  opacity: 0.9;
+  background: url(../dist/img/main-intro_2.png) no-repeat center center/ 100%
+      115%,
+    url(../dist/img/bk2-removebg.png) no-repeat center bottom -20px/ 85% 50%;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
