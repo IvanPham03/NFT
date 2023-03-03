@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> 
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nft Market</title>
     <link rel="shortcut icon" href="dist/img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/main.css" />
     <!-- css header -->
-    <link rel="stylesheet" href="style/header.css"/>
+    <link rel="stylesheet" href="style/header.css" />
     <!-- css hero -->
-    <link rel="stylesheet" href="style/hero.css"/>
+    <link rel="stylesheet" href="style/hero.css" />
     <!-- css card -->
-    <link rel="stylesheet" href="style/card.css"/>
+    <link rel="stylesheet" href="style/card.css" />
     <!-- css rank -->
-    <link rel="stylesheet" href="style/rank.css"/>
+    <link rel="stylesheet" href="style/rank.css" />
     <!-- css art -->
-    <link rel="stylesheet" href="style/art.css"/>
+    <link rel="stylesheet" href="style/art.css" />
     <!-- css contact -->
-    <link rel="stylesheet" href="style/contact.css"/>
+    <link rel="stylesheet" href="style/contact.css" />
     <!-- css footer -->
-    <link rel="stylesheet" href="style/footer.css"/>
+    <link rel="stylesheet" href="style/footer.css" />
   </head>
   <body>
     <div class="container">
@@ -32,13 +32,14 @@
         </div>
         <div class="function-left">
           <div class="nav">
-            <span><a href="#explore">explore</a></span>
-            <span><a href="#community">community</a></span>
-            <span class="active"><a href="#about">about us</a></span>
-            <span><a href="#art">features arts</a></span>
-            <span><a href="#contact">contact us</a></span>
+            <span class="explore nav-item active"><span><a href="#explore">explore</a></span></span>
+            <span class="community nav-item"><span><a href="#community">community</a></span></span>
+            <span class="about nav-item"><span><a href="#about">about us</a></span></span>
+            <span class="art nav-item"><span><a href="#art">features arts</a></span></span>
+            <span class="contact nav-item"><span><a href="#contact">contact us</a></span></span>
           </div>
           <span class="line"></span>
+          <div class="menu"></div>
           <button class="btn__bgRed">Sign up</button>
         </div>
       </section>
@@ -63,7 +64,7 @@
             <div class="btns">
               <button class="btn-sign-up btn__bgRed">SIGN UP</button>
               <button class="btn-log-in btn__bgWhite">LOG IN</button>
-            </div>
+            </div>p˚
           </div>
         </div>
         <div class="img"></div>
@@ -141,7 +142,7 @@
           <button class="btn__bgWhite">EXHIBATION</button>
         </span>
         <div class="tb">
-          <div class="row">
+          <div class="row" id="r1">
             <span class="year">2023</span>
             <span class="name">BUMP FESTIVALS</span>
             <span class="icon">
@@ -156,7 +157,7 @@
               ><img src="./dist/img/arrow-right.png" alt="icon-arrow"
             /></span>
           </div>
-          <div class="row">
+          <div class="row" id="r2">
             <span class="year">2018</span>
             <span class="name">FCPA CREATIVE</span>
             <span class="icon">
@@ -171,7 +172,7 @@
               ><img src="./dist/img/arrow-right.png" alt="icon-arrow"
             /></span>
           </div>
-          <div class="row">
+          <div class="row" id="r3">
             <span class="year">2010</span>
             <span class="name">OFFF FESTIVALS</span>
             <span class="icon">
@@ -186,7 +187,7 @@
               ><img src="./dist/img/arrow-right.png" alt="icon-arrow"
             /></span>
           </div>
-          <div class="row">
+          <div class="row" id="r4">
             <span class="year">2005</span>
             <span class="name">OPEN STDUIOS</span>
             <span class="icon">
@@ -209,17 +210,28 @@
             2023 BEST <span class="color__red">Nft - Market</span>
           </p>
           <p class="color__white">VECTOR ART IMAGE</p>
-          <div class="dash-slide">
-            <span class="dash"></span>
-            <span class="dash"></span>
-            <span class="dash"></span>
+          <div class="dash-slide carousel-indicators">
+            <span class="dash active" id="1"></span>
+            <span class="dash" id="2"></span>
+            <span class="dash" id="3"></span>
           </div>
-          <p class="des">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-            consequuntur excepturi quis debitis, sunt pariatur accusantium magni
-            enim architecto quaerat, consectetur est libero officiis
-            perferendis.
-          </p>
+          <div class="list">
+            <p class="des active" id="des1">
+              Qui consequuntur excepturi quis debitis, sunt pariatur accusantium
+              magni enim architecto quaerat, consectetur est libero officiis
+              perferendis.
+            </p>
+            <p class="des" id="des2">
+              Dignissimos exercitationem similique, nihil magni sed praesentium
+              assumenda suscipit, quod blanditiis tempora libero, aut quidem
+              minima rem eaque unde corrupti voluptas porro.
+            </p>
+            <p class="des" id="des3">
+              Eius officiis praesentium provident veritatis sit aspernatur, voluptate
+              dicta necessitatibus, ipsam minus repudiandae quasi excepturi
+              exercitationem, non deleniti possimus soluta? Illum, autem.
+            </p>
+          </div>
           <button class="btn__bgRed">SIGN UP</button>
         </div>
         <div class="img"></div>
@@ -308,11 +320,11 @@
             <span> Market. </span>
           </a>
         </div>
-        <span class="nav"><a href="#explore">EXPLORE</a></span>
-        <span class="nav"><a href="#community">COMMUNITY</a></span>
-        <span class="nav"><a href="#about">ABOUT US</a></span>
-        <span class="nav"><a href="#art">FEATURED ARTS</a></span>
-        <span class="nav"><a href="#contact">CONTACT US</a></span>
+        <span class="explore nav active" ><a href="#explore">EXPLORE</a></span>
+        <span class="community nav"><a href="#community">COMMUNITY</a></span>
+        <span class="about nav"><a href="#about">ABOUT US</a></span>
+        <span class="art nav"><a href="#art">FEATURED ARTS</a></span>
+        <span class="contact nav"><a href="#contact">CONTACT US</a></span>
         <p class="search">
           <input type="text" placeholder="SEARCH" />
           <button><img src="./dist/img/search-icon.png" alt="icon" /></button>
@@ -328,7 +340,14 @@
             <a href="#explore">TERM AND CONDITION</a>
           </span>
         </p>
-        <p>COPYWRITE BY <i><a href="https://github.com/IvanPham03" target="_blank">IVAN PHAM</a></i></p>
+        <p>
+          COPYWRITE BY
+          <i
+            ><a href="https://github.com/IvanPham03" target="_blank"
+              >IVAN PHAM</a
+            ></i
+          >
+        </p>
         <p>
           <span>
             <a href="#explore">COOKIES PRIVACY POLICY</a>
@@ -341,4 +360,5 @@
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

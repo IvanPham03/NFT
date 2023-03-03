@@ -2,8 +2,12 @@
     margin-top: 50px;
     text-align: center;
     scroll-margin-top: 50px;
+    transition: 1s ease-in-out all;
+    opacity: 0;
 }
-
+.container .ranks.show{
+    opacity: 1;
+}
 .ranks h3 {
     font-size: 50px;
     font-weight: 900;
@@ -63,4 +67,34 @@
 
 .ranks .tb .row:hover .icon-arrow{
     animation: zoom 1s infinite linear;
+}
+
+
+/* ============res table ============== */
+@media only screen and (max-width: 768px){
+    .ranks{
+        display: block;
+    }
+
+    .ranks span button{
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .ranks .tb .row{
+        height: 400px;
+        flex-direction: column;
+        background: url(../dist/img/bk4.png) no-repeat center center/ 200%;
+        padding: 0 10px !important;
+        margin: 40px 0;
+        justify-content: space-around;
+    }
+    .ranks .tb .row .year{
+        margin: 0 !important;
+    }
+    .ranks .tb .row .icon{
+        width: unset;
+    }
+
 }

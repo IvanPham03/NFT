@@ -25,7 +25,7 @@
   padding: 40px;
 }
 .head_foot .logo {
-  width: 20%;
+  width: 18%;
 }
 /* logo */
 .head_foot .logo a {
@@ -43,12 +43,15 @@
   font-size: 18px;
 }
 /* function-left */
+.menu {
+  display: none;
+}
 .function-left {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 80%;
+  width: 100%;
 }
 /* nav */
 .function-left .nav {
@@ -59,7 +62,7 @@
   width: 65%;
   justify-content: space-around;
 }
-.function-left .nav span {
+.function-left .nav .nav-item {
   display: flex;
   align-items: center;
   text-align: center;
@@ -68,8 +71,10 @@
   height: 100px;
   transition: transform 0.25s ease-out;
   transform-origin: center;
+  cursor: default;
+  pointer-events: unset;
 }
-.function-left .nav span a {
+.function-left .nav .nav-item a {
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
@@ -83,11 +88,16 @@
   cursor: pointer;
   z-index: 100;
   position: relative;
+  pointer-events: all;
+  transition: 0.4s all ease;
+}
+.function-left .nav .nav-item a:hover{
+  color: var(--red);
 }
 
 /* underline animation hover */
-.function-left .nav span a::after{
-  content: '';
+.function-left .nav .nav-item a::after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -98,22 +108,21 @@
   transition: transform 0.25s ease-out;
   transform-origin: center;
 }
-.function-left .nav span a:hover::after {
+.function-left .nav .nav-item a:hover::after {
   transform: scaleX(1);
 }
 
-
-.function-left .navs .nav .active {
+.function-left .nav .nav-item.active {
   background: url(../dist/img/bk.png) no-repeat center center;
   background-size: cover;
+  transition: 0.4s ease-in-out all;
 }
-.function-left .nav .active a {
+.function-left .nav .active span {
   border: 1px solid var(--red);
   border-radius: 10px;
   padding: 50px 10px;
 }
-.function-left .nav .active a::after{
-  bottom: 46px;
+.function-left .nav .active a::after {
   width: 80%;
   left: 10px;
 }
@@ -123,9 +132,86 @@
   border-left: 2px solid var(--white);
   width: 10px;
   height: 100px;
+  margin-left: 10px;
 }
 
 /* hover */
-.header .function-left button{
+.header .function-left button {
   margin-left: 10px;
+}
+
+/* ================ responsive table ================== */
+@media only screen and (max-width: 768px) {
+  /* default iPad screens */
+  .function-left {
+    position: relative;
+  }
+  .function-left .line {
+    display: none !important;
+  }
+  .function-left .nav {
+    padding: 20px 0;
+    border: 1px solid var(--gray);
+    position: absolute;
+    display: flex !important;
+    transform: translateX(1000px);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50px;
+    right: 120px;
+    height: 500px;
+    width: 200px;
+    z-index: 10000;
+    background-color: var(--red);
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px var(--red);
+  }
+  .function-left .menu {
+    background: url(../dist/img/hamberger.png) no-repeat center center;
+    display: block !important;
+    border: 1px solid var(--red);
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 5px var(--red);
+    width: 40px;
+    height: 40px;
+  }
+  .function-left .menu.active {
+    transform: rotate(-45deg);
+  }
+  .function-left .nav.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .function-left .nav::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -12px;
+    right: 12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid var(--red);
+  }
+  .function-left .nav .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  .function-left .nav .active span {
+    border-color: var(--white);
+    width: 220px;
+    padding: 40px 10px;
+  }
+  .function-left .nav .nav-item a::after {
+    background-color: var(--white);
+  }
+  .function-left .nav .nav-item.active span {
+    background-size: 200%;
+  }
 }

@@ -1,8 +1,14 @@
-.cards{
+#community{
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
     scroll-margin-top: 50px;
+    opacity: 0;
+    transition: 1s ease-in-out all;
+}
+#community.show{
+    opacity: 1;
+
 }
 .card{
     background: url(../dist/img/bk4.png) no-repeat center center;
@@ -86,4 +92,22 @@
 .cards .card:hover {
     border: 1px solid var(--gray);
     transform: scale(1.05);
+}
+
+
+/* ==========res table =============== */
+
+@media only screen and (max-width: 768px){
+    #community{
+        display: block;
+    }
+    #community .card {
+        width: 100%;
+        margin: 40px 0;
+        padding: 20px 20px;
+        background: url(../dist/img/bk4.png) no-repeat center center/200%;
+    }
+    #community button{
+        display: block;
+    }
 }
