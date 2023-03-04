@@ -116,6 +116,7 @@
     display: flex;
     align-self: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social .icon p {
@@ -123,6 +124,7 @@
   padding: 20px;
   border: 1px solid var(--gray);
   transition: 0.2s ease-in-out;
+  margin: 10px;
 }
 .social .icon p:hover{
     background-color: var(--red);

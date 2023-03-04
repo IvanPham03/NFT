@@ -141,7 +141,7 @@
 }
 
 /* ================ responsive table ================== */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   /* default iPad screens */
   .function-left {
     position: relative;
@@ -151,8 +151,8 @@
   }
   .function-left .nav {
     padding: 20px 0;
-    border: 1px solid var(--gray);
     position: absolute;
+    border: none;
     display: flex !important;
     transform: translateX(1000px);
     opacity: 0;
@@ -166,7 +166,7 @@
     z-index: 10000;
     background-color: var(--red);
     border-radius: 5px;
-    box-shadow: 2px 5px 10px var(--red);
+    box-shadow: 0px 2px 10px var(--red);
   }
   .function-left .menu {
     background: url(../dist/img/hamberger.png) no-repeat center center;
@@ -202,6 +202,10 @@
   .function-left .nav .nav-item {
     margin: 0;
     padding: 0;
+  }
+  .function-left .nav .nav-item a:hover{
+    color: var(--white);
+    opacity: 0.9;
   }
   .function-left .nav .active span {
     border-color: var(--white);

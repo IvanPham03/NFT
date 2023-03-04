@@ -5,6 +5,7 @@
 .footer .head_foot {
   height: 250px !important;
   background: none !important;
+  overflow: hidden;
 }
 
 .footer .navs .logo {
@@ -91,6 +92,10 @@
   .footer .head_foot{
     height: unset !important;
   }
+  .footer .head_foot .logo{
+    width: 100%;
+    margin-left: 0 !important;
+  }
   .footer .head_foot span{
     margin: 20px auto;
     width: 200px;
@@ -100,5 +105,9 @@
     display: block !important;
     text-align: center;
     line-height: 50px;
+  }
+  .footer .navs .search{
+    width: 50%;
+    margin: 0 auto;
   }
 }

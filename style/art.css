@@ -68,7 +68,7 @@
     width: 140px;
 }
 
-/* -============res table =========*/
+/* -============res tablet =========*/
 @media only screen and (max-width: 768px){
     .container #art {
         display: block !important;

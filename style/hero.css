@@ -17,7 +17,7 @@
   opacity: 0;
   transition: 1s ease-in-out all;
 }
-.hero.show{
+.hero.show {
   opacity: 1;
 }
 .hero .text {
@@ -56,8 +56,8 @@
   margin: 40px 0;
 }
 /* button */
-.hero .text .text-02 button{
-    margin-right: 20px;
+.hero .text .text-02 button {
+  margin-right: 20px;
 }
 
 .hero .text-02 .btns .btn-sign-up {
@@ -80,23 +80,25 @@
   animation: moveUpDown 2s ease-in-out infinite;
 }
 
-
 /* ==================res table=================== */
-@media only screen and (max-width: 768px){
-  .container .hero{
+@media only screen and (max-width: 768px) {
+  .container .hero {
     display: block;
     text-align: center;
     height: fit-content;
   }
-  .hero .text{
+  .hero .text {
     width: 100%;
   }
-  .hero .img{
+  .hero .img {
     opacity: 1;
     margin-top: 50px;
     height: 500px;
     width: 100%;
-    background: url(../dist/img/main-intro_2.png) no-repeat left center/100% ,
-  url(../dist/img/bk2-removebg.png) no-repeat center bottom -20px/ 100%;
+    background: url(../dist/img/main-intro_2.png) no-repeat left center/100%,
+      url(../dist/img/bk2-removebg.png) no-repeat center bottom -20px/ 100%;
+  }
+  .hero .text .text-02 {
+    margin: 0 !important;
   }
 }

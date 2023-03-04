@@ -32,7 +32,7 @@
     border: 1px solid var(--gray);
     text-align: start;
     cursor: pointer;
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .ranks .tb .row:hover {
     border: 1px solid var(--red);
@@ -71,7 +71,7 @@
 
 
 /* ============res table ============== */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
     .ranks{
         display: block;
     }
@@ -95,6 +95,9 @@
     }
     .ranks .tb .row .icon{
         width: unset;
+    }
+    .ranks .tb .row .icon-arrow{
+        margin: 0 !important;
     }
 
 }
