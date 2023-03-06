@@ -89,7 +89,7 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 100px;
-  background: url(../dist/img/bk4.png) no-repeat center center/200%;
+  background: url(../dist/img/bk4.png) no-repeat center center/300%;
   border-radius: 10px;
   border: 1px solid var(--gray_text);
 }
@@ -199,5 +199,16 @@
   .social .icon p{
     margin: 30px 0;
     text-align: center;
+  }
+}
+
+
+/* ===========mobile=========== */
+@media screen and (max-width:460px) {
+  .container #contact{
+    margin-top: 0 !important;
+  }
+  .contact .feature .items .item {
+    width: 80%;
   }
 }

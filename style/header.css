@@ -16,13 +16,14 @@
 
 /* header */
 .head_foot {
-  background: url(../dist/img/bk3.png) no-repeat center center / 200%;
+  background: url(../dist/img/bk4.png) no-repeat center center / 200%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: center;
   padding: 40px;
+  border-radius: 10px;
 }
 .head_foot .logo {
   width: 18%;
@@ -217,5 +218,22 @@
   }
   .function-left .nav .nav-item.active span {
     background-size: 200%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 460px){
+  .head_foot{
+    padding: 20px !important;
+  }
+  .head_foot .logo a span:first-child{
+    font-size: 34px;
+    font-weight: 400;
+  }
+  .function-left{
+    width: 100vw;
+  }
+  .function-left .nav{
+    transform: translateX(0);
   }
 }

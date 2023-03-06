@@ -1,6 +1,6 @@
 .footer {
   padding-bottom: 20px;
-  background: url(../dist/img/bk4.png) no-repeat center center/ 200% !important;
+  background: url(../dist/img/bk4.png) no-repeat center center/ 300% !important;
 }
 .footer .head_foot {
   height: 250px !important;
@@ -109,5 +109,15 @@
   .footer .navs .search{
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+/* ==== mobile === */
+@media screen and (max-width: 460px) {
+  .footer{
+    margin-bottom: 100px !important;
+  }
+  .footer .navs .search{
+    width: 70%;
   }
 }

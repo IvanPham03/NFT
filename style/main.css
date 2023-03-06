@@ -143,3 +143,9 @@ button:hover {
     margin: 60px 200px 0 !important;
   }
 }
+
+@media screen and (max-width: 460px){
+  .container {
+    margin: 10px !important;
+  }
+}

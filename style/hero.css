@@ -56,8 +56,13 @@
   margin: 40px 0;
 }
 /* button */
-.hero .text .text-02 button {
-  margin-right: 20px;
+.hero .btns{
+  display: flex;
+  justify-content: center;
+}
+.hero .btns button {
+  display: block;
+  margin: 0 20px;
 }
 
 .hero .text-02 .btns .btn-sign-up {
@@ -100,5 +105,13 @@
   }
   .hero .text .text-02 {
     margin: 0 !important;
+  }
+}
+
+/* ====mobile===== */
+@media only screen and (max-width: 768px) {
+  .large{
+    font-size: 40px;
+    font-weight: 600;
   }
 }
