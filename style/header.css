@@ -114,9 +114,11 @@
 }
 
 .function-left .nav .nav-item.active {
-  background: url(../dist/img/bk.png) no-repeat center center;
+  background: url(../dist/img/bk.png) no-repeat center center/200%;
   background-size: cover;
   transition: 0.4s ease-in-out all;
+  /* background-clip: padding-box; */
+  box-shadow: 0 10px 100px var(--main_bg) inset;
 }
 .function-left .nav .active span {
   border: 1px solid var(--red);
