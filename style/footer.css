@@ -114,9 +114,6 @@
 
 /* ==== mobile === */
 @media screen and (max-width: 460px) {
-  .footer{
-    margin-bottom: 100px !important;
-  }
   .footer .navs .search{
     width: 70%;
   }

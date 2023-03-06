@@ -237,5 +237,6 @@
   }
   .function-left .nav{
     transform: translateX(0);
+    top: 65px !important;
   }
 }
