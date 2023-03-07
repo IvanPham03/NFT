@@ -1,17 +1,18 @@
 .footer {
+  margin-top: 50px;
   padding-bottom: 20px;
-  background: url(../dist/img/bk4.png) no-repeat center center/ 300% !important;
+  background: url(../dist/img/bk3.png) no-repeat center center/ 300% !important;
 }
 .footer .head_foot {
   height: 250px !important;
   background: none !important;
   overflow: hidden;
+  border: none !important;
 }
 
 .footer .navs .logo {
   margin-left: 40px;
 }
-
 .footer .navs .nav {
   padding: 12px 20px;
   border-radius: 5px;
