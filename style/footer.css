@@ -4,6 +4,7 @@
   background: url(../dist/img/bk3.png) no-repeat center center/ 300% !important;
   height: unset;
 }
+
 .footer .head_foot {
   height: 250px !important;
   background: none !important;
@@ -14,16 +15,19 @@
 .footer .navs .logo {
   margin-left: 40px;
 }
+
 .footer .navs .nav {
   padding: 12px 20px;
   border-radius: 5px;
   transition: 0.2s ease-in-out;
 }
+
 .footer .navs .nav a {
   color: var(--white);
   font-size: 16px;
   text-decoration: none;
 }
+
 .footer .navs .search {
   border: 1px solid var(--gray);
   border-radius: 5px;
@@ -32,6 +36,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .footer .navs .search button {
   outline: none;
   padding: 10px 20px;
@@ -41,6 +46,7 @@
   border: none;
   cursor: pointer;
 }
+
 .footer .navs .search input {
   width: 100%;
   background: transparent;
@@ -51,14 +57,17 @@
   outline: none;
   border: none;
 }
+
 /* hover */
 .footer .navs .nav.active {
   border: 1px solid var(--red);
   opacity: 0.8;
 }
+
 .footer .navs .nav:hover {
   opacity: 0.8;
 }
+
 .footer .navs .nav.active a {
   color: var(--red);
 }
@@ -70,10 +79,12 @@
   justify-content: space-around;
   color: var(--white);
 }
+
 .copywrite a {
   text-decoration: none;
   color: var(--white);
 }
+
 .copywrite a:hover {
   color: var(--gray_text);
 }
@@ -88,39 +99,48 @@
 
 /* ============res table ============= */
 @media only screen and (max-width: 768px) {
-  .footer, .footer .head_foot, .footer .head_foot span {
+  .footer {
+    background: unset !important;
+    border-top: 0.5px solid var(--gray_text);
+  }
+
+  .footer,
+  .footer .head_foot,
+  .footer .head_foot span {
     display: block !important;
   }
-  .footer .head_foot{
+
+  .footer .head_foot {
     height: unset !important;
   }
-  .footer .head_foot .logo{
+
+  .footer .head_foot .logo {
     width: 100%;
     margin-left: 0 !important;
   }
-  .footer .head_foot span{
+
+  .footer .head_foot span {
     margin: 20px auto;
     width: 200px;
     text-align: center;
   }
-  .footer .copywrite{
+
+  .footer .copywrite {
     display: block !important;
     text-align: center;
     line-height: 50px;
   }
-  .footer .navs .search{
+
+  .footer .navs .search {
     width: 50%;
     margin: 0 auto;
   }
 }
 
+
 /* ==== mobile === */
 @media screen and (max-width: 460px) {
-  .footer{
-    background: unset !important;
-    border-top: 0.5px solid var(--gray_text) ;
-  }
-  .footer .navs .search{
+  .footer .navs .search {
     width: 70%;
   }
 }
