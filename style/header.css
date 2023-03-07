@@ -16,7 +16,6 @@
 
 /* header */
 .head_foot {
-  background: url(../dist/img/bk4.png) no-repeat center center / 200%;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -24,6 +23,7 @@
   align-self: center;
   padding: 40px;
   border-radius: 10px;
+  border: .5px solid var(--gray_text);
 }
 .head_foot .logo {
   width: 18%;
@@ -119,6 +119,8 @@
   transition: 0.4s ease-in-out all;
   /* background-clip: padding-box; */
   box-shadow: 0 10px 100px var(--main_bg) inset;
+  border-top: .5px solid var(--gray_text);
+  border-bottom: .5px solid var(--gray_text);
 }
 .function-left .nav .active span {
   border: 1px solid var(--red);

@@ -114,4 +114,8 @@
     font-size: 40px;
     font-weight: 600;
   }
+  .hero .img {
+    height: 400px;
+    background: url(../dist/img/main-intro_2.png) no-repeat left center/100%, url(../dist/img/bk2-removebg.png) no-repeat center bottom 90px/ 100%;
+  }
 }
